@@ -1,0 +1,162 @@
+<html data-reactroot="">
+    
+    <head>
+        <title></title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"
+        type="text/css" />
+        <link rel="stylesheet" type="text/css" href="https://baudin999.github.io/swarm-publish/styles.css"
+        />
+        <script crossorigin="true" src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+        <script crossorigin="true" src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="root">
+            <div class="header">
+                <div class="header-nav">
+                    <ul>
+                        <li class="header-nav--logo"><a href="https://baudin999.github.io/swarm-publish/"><img src="https://baudin999.github.io/swarm-publish/logo-essent.png"/></a>
+                        </li>
+                        <li>
+                            <ul class="tags">
+                                <li class="">
+                                    <div><a class="hover" href="https://baudin999.github.io/swarm-publish/craftsmanship">Craftsmanship</a>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div><span class="separator"> | </span><a class="hover" href="https://baudin999.github.io/swarm-publish/wolfs">Wolfs</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="https://baudin999.github.io/swarm-publish/search.html">Search</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="root--content">
+                <div class="container">
+                    <input id="search-field" />
+                    <button id="search-field-execute">Search</button>
+                    <div id="search-results"></div>
+                    <div>
+                        <script>
+                            var items = [
+                                {
+                                    "name": "being a developer is not stressfull jasper boeijenga",
+                                    "title": "Being a developer is not stressfull",
+                                    "description": "undefined<div>Jasper Boeijenga</div><div>Fri Apr 08 2022</div>",
+                                    "url": "https://baudin999.github.io/swarm-publish/essent/jasper-boeijenga/being-a-developer-is-not-stressfull/"
+                                },
+                                {
+                                    "name": "how to write code! tijs van erp",
+                                    "title": "How to write code!",
+                                    "description": "This is how you can write code.<div>Tijs van Erp</div><div>Fri Apr 08 2022</div>",
+                                    "url": "https://baudin999.github.io/swarm-publish/essent/tijs-van-erp/how-to-write-code/"
+                                },
+                                {
+                                    "name": "something 02 carlos kelkboom",
+                                    "title": "Something 02",
+                                    "description": "This is something important\nAnd this is a second parsagraph of the description<div>Carlos Kelkboom</div><div>Mon Apr 04 2022</div>",
+                                    "url": "https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/something-02/"
+                                },
+                                {
+                                    "name": "something 03 carlos kelkboom",
+                                    "title": "Something 03",
+                                    "description": "This is something important\nAnd this is a second parsagraph of the description<div>Carlos Kelkboom</div><div>Mon Apr 04 2022</div>",
+                                    "url": "https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/something-03/"
+                                },
+                                {
+                                    "name": "something 04 carlos kelkboom",
+                                    "title": "Something 04",
+                                    "description": "This is something important\nAnd this is a second parsagraph of the description<div>Carlos Kelkboom</div><div>Mon Apr 04 2022</div>",
+                                    "url": "https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/something-04/"
+                                },
+                                {
+                                    "name": "something 01 carlos kelkboom",
+                                    "title": "Something 01",
+                                    "description": "This is something important\nAnd this is a second parsagraph of the description<div>Carlos Kelkboom</div><div>Mon Apr 04 2022</div>",
+                                    "url": "https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/someting-01/"
+                                },
+                                {
+                                    "name": "who's afraid of the big bad wolf carlos kelkboom",
+                                    "title": "Who's afraid of the big bad wolf",
+                                    "description": "The life of the big bad wolf<div>Carlos Kelkboom</div><div>Sun Mar 27 2022</div>",
+                                    "url": "https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/big-bad-wolf/"
+                                },
+                                {
+                                    "name": "hello, world! carlos kelkboom",
+                                    "title": "Hello, World!",
+                                    "description": "Hello to the world<div>Carlos Kelkboom</div><div>Sat Mar 12 2022</div>",
+                                    "url": "https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/hello-world/"
+                                },
+                                {
+                                    "name": "hello, world, from tijs! tijs van erp",
+                                    "title": "Hello, World, from Tijs!",
+                                    "description": "Hello to the world<div>Tijs van Erp</div><div>Sat Mar 12 2022</div>",
+                                    "url": "https://baudin999.github.io/swarm-publish/essent/tijs-van-erp/hello-world/"
+                                },
+                                {
+                                    "name": "carlos kelkboom",
+                                    "title": "Carlos Kelkboom",
+                                    "description": "Carlos is a Technical Fellow aat Essent. He enjoys writing in general, he writes stories, technical content music and code.",
+                                    "url": "https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/"
+                                },
+                                {
+                                    "name": "jasper boeijenga",
+                                    "title": "Jasper Boeijenga",
+                                    "url": "https://baudin999.github.io/swarm-publish/essent/jasper-boeijenga/"
+                                },
+                                {
+                                    "name": "tijs van erp",
+                                    "title": "Tijs van Erp",
+                                    "url": "https://baudin999.github.io/swarm-publish/essent/tijs-van-erp/"
+                                },
+                                {
+                                    "name": "bla",
+                                    "title": "Bla",
+                                    "description": "The bla company",
+                                    "url": "https://baudin999.github.io/swarm-publish/bla"
+                                },
+                                {
+                                    "name": "essent",
+                                    "title": "Essent",
+                                    "description": "The nr one energy company",
+                                    "url": "https://baudin999.github.io/swarm-publish/essent"
+                                }
+                            ]
+                            
+                            function search() {
+                                var searchField = document.getElementById('search-field');
+                                var searchValue = searchField.value.toLowerCase();
+                                var searchResults = document.getElementById('search-results');
+                                var results = items.filter(i => i.name.indexOf(searchValue) > -1);
+                            
+                                if (!results || results.length === 0) {
+                                    searchResults.innerHTML = 'Could not find anything';
+                                }
+                                else {
+                                    searchResults.innerHTML = '';
+                                    results.forEach(result => {
+                                        let element = document.createElement('div');
+                                        let content = `<div class='search-result'><a class='accented hover' href='${result.url}'>${result.title}<div>${result.description}</div></a></div>`;
+                                        element.innerHTML = content;
+                                        searchResults.appendChild(element);
+                                    });
+                                }
+                            }
+                            
+                            var button = document.getElementById('search-field-execute');
+                            button.addEventListener('click', search, false);
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

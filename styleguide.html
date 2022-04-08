@@ -1,0 +1,517 @@
+<html data-reactroot="">
+    
+    <head>
+        <title></title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"
+        type="text/css" />
+        <link rel="stylesheet" type="text/css" href="https://baudin999.github.io/swarm-publish/styles.css"
+        />
+        <script crossorigin="true" src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+        <script crossorigin="true" src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="root">
+            <div class="header">
+                <div class="header-nav">
+                    <ul>
+                        <li class="header-nav--logo"><a href="https://baudin999.github.io/swarm-publish/"><img src="https://baudin999.github.io/swarm-publish/logo-essent.png"/></a>
+                        </li>
+                        <li>
+                            <ul class="tags">
+                                <li class="">
+                                    <div><a class="hover" href="https://baudin999.github.io/swarm-publish/craftsmanship">Craftsmanship</a>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div><span class="separator"> | </span><a class="hover" href="https://baudin999.github.io/swarm-publish/wolfs">Wolfs</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="https://baudin999.github.io/swarm-publish/search.html">Search</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="root--content">
+                <p>You can get all of the organisations by using the global state:</p><pre><code>[
+    {
+        &quot;id&quot;: &quot;bla&quot;,
+        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-content\\bla&quot;,
+        &quot;name&quot;: &quot;Bla&quot;,
+        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/bla&quot;,
+        &quot;description&quot;: &quot;The bla company&quot;,
+        &quot;SEO&quot;: {
+            &quot;name&quot;: &quot;Bla&quot;,
+            &quot;description&quot;: &quot;The bla company&quot;
+        },
+        &quot;html&quot;: &quot;&lt;p&gt;Let&#x27;s bring on the bla&lt;/p&gt;\n&quot;,
+        &quot;authors&quot;: []
+    },
+    {
+        &quot;id&quot;: &quot;essent&quot;,
+        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-sample-content\\Essent&quot;,
+        &quot;name&quot;: &quot;Essent&quot;,
+        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent&quot;,
+        &quot;SEO&quot;: {
+            &quot;name&quot;: &quot;Essent&quot;,
+            &quot;description&quot;: &quot;The nr one energy company&quot;,
+            &quot;logo&quot;: &quot;./logo-essent.png&quot;
+        },
+        &quot;authors&quot;: [
+            {
+                &quot;id&quot;: &quot;carlos-kelkboom&quot;,
+                &quot;name&quot;: &quot;Carlos Kelkboom&quot;,
+                &quot;org_id&quot;: &quot;essent&quot;,
+                &quot;org_name&quot;: &quot;essent&quot;,
+                &quot;role&quot;: &quot;Technical Fellow&quot;,
+                &quot;image&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/portrait.jpg&quot;,
+                &quot;description&quot;: &quot;Carlos is a Technical Fellow aat Essent. He enjoys writing in general, he writes stories, technical content music and code.&quot;,
+                &quot;SEO&quot;: {
+                    &quot;name&quot;: &quot;Carlos Kelkboom&quot;,
+                    &quot;role&quot;: &quot;Technical Fellow&quot;,
+                    &quot;image&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/portrait.jpg&quot;,
+                    &quot;description&quot;: &quot;Carlos is a Technical Fellow aat Essent. He enjoys writing in general, he writes stories, technical content music and code.&quot;
+                },
+                &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-content\\Essent\\carlos-kelkboom&quot;,
+                &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/&quot;,
+                &quot;blogs&quot;: [
+                    {
+                        &quot;id&quot;: &quot;big-bad-wolf&quot;,
+                        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-content\\Essent\\carlos-kelkboom\\big-bad-wolf&quot;,
+                        &quot;title&quot;: &quot;Who&#x27;s afraid of the big bad wolf&quot;,
+                        &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+                        &quot;description&quot;: &quot;The life of the big bad wolf&quot;,
+                        &quot;date&quot;: &quot;Sun Mar 27 2022&quot;,
+                        &quot;tags&quot;: [
+                            &quot;wolfs&quot;
+                        ],
+                        &quot;image&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/big-bad-wolf/wolf.jpg&quot;,
+                        &quot;date_real&quot;: &quot;2022-03-26T23:00:00.000Z&quot;,
+                        &quot;SEO&quot;: {
+                            &quot;title&quot;: &quot;Who&#x27;s afraid of the big bad wolf&quot;,
+                            &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+                            &quot;description&quot;: &quot;The life of the big bad wolf&quot;,
+                            &quot;date&quot;: &quot;Sun Mar 27 2022&quot;,
+                            &quot;tags&quot;: [
+                                &quot;wolfs&quot;
+                            ],
+                            &quot;image&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/big-bad-wolf/wolf.jpg&quot;,
+                            &quot;date_real&quot;: &quot;2022-03-26T23:00:00.000Z&quot;
+                        },
+                        &quot;author_id&quot;: &quot;carlos-kelkboom&quot;,
+                        &quot;author_role&quot;: &quot;Technical Fellow&quot;,
+                        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/big-bad-wolf/&quot;,
+                        &quot;html&quot;: &quot;&lt;h1&gt;Who&#x27;s afraid of the big bad wolf!&lt;/h1&gt;\n&lt;p&gt;&lt;img src=\&quot;./wolf.jpg\&quot; alt=\&quot;wolf\&quot;&gt;&lt;/p&gt;\n&lt;p&gt;This is a nice wolf, this will be a blog-post&lt;/p&gt;\n&quot;
+                    },
+                    {
+                        &quot;id&quot;: &quot;hello-world&quot;,
+                        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-content\\Essent\\carlos-kelkboom\\hello-world&quot;,
+                        &quot;title&quot;: &quot;Hello, World!&quot;,
+                        &quot;description&quot;: &quot;Hello to the world&quot;,
+                        &quot;date&quot;: &quot;Sat Mar 12 2022&quot;,
+                        &quot;tags&quot;: [],
+                        &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+                        &quot;date_real&quot;: &quot;2022-03-11T23:00:00.000Z&quot;,
+                        &quot;SEO&quot;: {
+                            &quot;title&quot;: &quot;Hello, World!&quot;,
+                            &quot;description&quot;: &quot;Hello to the world&quot;,
+                            &quot;date&quot;: &quot;Sat Mar 12 2022&quot;,
+                            &quot;tags&quot;: [],
+                            &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+                            &quot;date_real&quot;: &quot;2022-03-11T23:00:00.000Z&quot;
+                        },
+                        &quot;author_id&quot;: &quot;carlos-kelkboom&quot;,
+                        &quot;author_role&quot;: &quot;Technical Fellow&quot;,
+                        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/hello-world/&quot;,
+                        &quot;html&quot;: &quot;&lt;h1&gt;Hello World&lt;/h1&gt;\n&lt;p&gt;This is the hello, to the world.&lt;/p&gt;\n&lt;p&gt;This is changed&lt;/p&gt;\n&lt;p&gt;&lt;img src=\&quot;./bizon.jpg\&quot; alt=\&quot;bizon\&quot;&gt;&lt;/p&gt;\n&quot;
+                    },
+                    {
+                        &quot;id&quot;: &quot;something-02&quot;,
+                        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-content\\Essent\\carlos-kelkboom\\something-02&quot;,
+                        &quot;title&quot;: &quot;Something 02&quot;,
+                        &quot;description&quot;: &quot;This is something important\nAnd this is a second parsagraph of the description&quot;,
+                        &quot;date&quot;: &quot;Mon Apr 04 2022&quot;,
+                        &quot;tags&quot;: [],
+                        &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+                        &quot;date_real&quot;: &quot;2022-04-03T22:00:00.000Z&quot;,
+                        &quot;SEO&quot;: {
+                            &quot;title&quot;: &quot;Something 02&quot;,
+                            &quot;description&quot;: &quot;This is something important\nAnd this is a second parsagraph of the description&quot;,
+                            &quot;date&quot;: &quot;Mon Apr 04 2022&quot;,
+                            &quot;tags&quot;: [],
+                            &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+                            &quot;date_real&quot;: &quot;2022-04-03T22:00:00.000Z&quot;
+                        },
+                        &quot;author_id&quot;: &quot;carlos-kelkboom&quot;,
+                        &quot;author_role&quot;: &quot;Technical Fellow&quot;,
+                        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/something-02/&quot;,
+                        &quot;html&quot;: &quot;&lt;h1&gt;Someting 02&lt;/h1&gt;\n&quot;
+                    },
+                    {
+                        &quot;id&quot;: &quot;something-03&quot;,
+                        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-content\\Essent\\carlos-kelkboom\\something-03&quot;,
+                        &quot;title&quot;: &quot;Something 03&quot;,
+                        &quot;description&quot;: &quot;This is something important\nAnd this is a second parsagraph of the description&quot;,
+                        &quot;date&quot;: &quot;Mon Apr 04 2022&quot;,
+                        &quot;tags&quot;: [],
+                        &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+                        &quot;date_real&quot;: &quot;2022-04-03T22:00:00.000Z&quot;,
+                        &quot;SEO&quot;: {
+                            &quot;title&quot;: &quot;Something 03&quot;,
+                            &quot;description&quot;: &quot;This is something important\nAnd this is a second parsagraph of the description&quot;,
+                            &quot;date&quot;: &quot;Mon Apr 04 2022&quot;,
+                            &quot;tags&quot;: [],
+                            &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+                            &quot;date_real&quot;: &quot;2022-04-03T22:00:00.000Z&quot;
+                        },
+                        &quot;author_id&quot;: &quot;carlos-kelkboom&quot;,
+                        &quot;author_role&quot;: &quot;Technical Fellow&quot;,
+                        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/something-03/&quot;,
+                        &quot;html&quot;: &quot;&lt;h1&gt;Someting 03&lt;/h1&gt;\n&quot;
+                    },
+                    {
+                        &quot;id&quot;: &quot;something-04&quot;,
+                        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-content\\Essent\\carlos-kelkboom\\something-04&quot;,
+                        &quot;title&quot;: &quot;Something 04&quot;,
+                        &quot;description&quot;: &quot;This is something important\nAnd this is a second parsagraph of the description&quot;,
+                        &quot;date&quot;: &quot;Mon Apr 04 2022&quot;,
+                        &quot;tags&quot;: [],
+                        &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+                        &quot;date_real&quot;: &quot;2022-04-03T22:00:00.000Z&quot;,
+                        &quot;SEO&quot;: {
+                            &quot;title&quot;: &quot;Something 04&quot;,
+                            &quot;description&quot;: &quot;This is something important\nAnd this is a second parsagraph of the description&quot;,
+                            &quot;date&quot;: &quot;Mon Apr 04 2022&quot;,
+                            &quot;tags&quot;: [],
+                            &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+                            &quot;date_real&quot;: &quot;2022-04-03T22:00:00.000Z&quot;
+                        },
+                        &quot;author_id&quot;: &quot;carlos-kelkboom&quot;,
+                        &quot;author_role&quot;: &quot;Technical Fellow&quot;,
+                        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/something-04/&quot;,
+                        &quot;html&quot;: &quot;&lt;h1&gt;Someting 04&lt;/h1&gt;\n&quot;
+                    },
+                    {
+                        &quot;id&quot;: &quot;someting-01&quot;,
+                        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-content\\Essent\\carlos-kelkboom\\someting-01&quot;,
+                        &quot;title&quot;: &quot;Something 01&quot;,
+                        &quot;description&quot;: &quot;This is something important\nAnd this is a second parsagraph of the description&quot;,
+                        &quot;date&quot;: &quot;Mon Apr 04 2022&quot;,
+                        &quot;tags&quot;: [],
+                        &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+                        &quot;date_real&quot;: &quot;2022-04-03T22:00:00.000Z&quot;,
+                        &quot;SEO&quot;: {
+                            &quot;title&quot;: &quot;Something 01&quot;,
+                            &quot;description&quot;: &quot;This is something important\nAnd this is a second parsagraph of the description&quot;,
+                            &quot;date&quot;: &quot;Mon Apr 04 2022&quot;,
+                            &quot;tags&quot;: [],
+                            &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+                            &quot;date_real&quot;: &quot;2022-04-03T22:00:00.000Z&quot;
+                        },
+                        &quot;author_id&quot;: &quot;carlos-kelkboom&quot;,
+                        &quot;author_role&quot;: &quot;Technical Fellow&quot;,
+                        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/someting-01/&quot;,
+                        &quot;html&quot;: &quot;&lt;h1&gt;Someting 01&lt;/h1&gt;\n&quot;
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: &quot;jasper-boeijenga&quot;,
+                &quot;name&quot;: &quot;Jasper Boeijenga&quot;,
+                &quot;org_id&quot;: &quot;essent&quot;,
+                &quot;org_name&quot;: &quot;essent&quot;,
+                &quot;role&quot;: &quot;Technical Competence Lead - Front End&quot;,
+                &quot;image&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/jasper-boeijenga/jasper.jpeg&quot;,
+                &quot;SEO&quot;: {
+                    &quot;name&quot;: &quot;Jasper Boeijenga&quot;,
+                    &quot;role&quot;: &quot;Technical Competence Lead - Front End&quot;,
+                    &quot;image&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/jasper-boeijenga/jasper.jpeg&quot;
+                },
+                &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-sample-content\\Essent\\jasper-boeijenga&quot;,
+                &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/jasper-boeijenga/&quot;,
+                &quot;html&quot;: &quot;&lt;p&gt;&lt;img src=\&quot;./jasper.jpeg\&quot; alt=\&quot;jasper\&quot;&gt;&lt;/p&gt;\n&lt;p&gt;Jasper is our technical concience when it comes to front-ends.&lt;/p&gt;\n&quot;,
+                &quot;blogs&quot;: [
+                    {
+                        &quot;id&quot;: &quot;being-a-developer-is-not-stressfull&quot;,
+                        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-sample-content\\Essent\\jasper-boeijenga\\being-a-developer-is-not-stressfull&quot;,
+                        &quot;title&quot;: &quot;Being a developer is not stressfull&quot;,
+                        &quot;tags&quot;: [
+                            &quot;craftsmanship&quot;
+                        ],
+                        &quot;image&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/jasper-boeijenga/being-a-developer-is-not-stressfull/image.png&quot;,
+                        &quot;author&quot;: &quot;Jasper Boeijenga&quot;,
+                        &quot;date_real&quot;: &quot;2022-04-08T12:02:22.032Z&quot;,
+                        &quot;date&quot;: &quot;Fri Apr 08 2022&quot;,
+                        &quot;SEO&quot;: {
+                            &quot;title&quot;: &quot;Being a developer is not stressfull&quot;,
+                            &quot;tags&quot;: [
+                                &quot;craftsmanship&quot;
+                            ],
+                            &quot;image&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/jasper-boeijenga/being-a-developer-is-not-stressfull/image.png&quot;,
+                            &quot;author&quot;: &quot;Jasper Boeijenga&quot;,
+                            &quot;date_real&quot;: &quot;2022-04-08T12:02:22.032Z&quot;,
+                            &quot;date&quot;: &quot;Fri Apr 08 2022&quot;
+                        },
+                        &quot;author_id&quot;: &quot;jasper-boeijenga&quot;,
+                        &quot;author_role&quot;: &quot;Technical Competence Lead - Front End&quot;,
+                        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/jasper-boeijenga/being-a-developer-is-not-stressfull/&quot;,
+                        &quot;html&quot;: &quot;&lt;p&gt;Being a developer is not stressfull&lt;/p&gt;\n&lt;p&gt;&lt;img src=\&quot;./image.png\&quot; alt=\&quot;stressfull\&quot;&gt;&lt;/p&gt;\n&quot;
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: &quot;tijs-van-erp&quot;,
+                &quot;name&quot;: &quot;Tijs van Erp&quot;,
+                &quot;org_id&quot;: &quot;essent&quot;,
+                &quot;org_name&quot;: &quot;essent&quot;,
+                &quot;role&quot;: &quot;Solution Architect in the Data Domain&quot;,
+                &quot;organisation&quot;: &quot;Essent&quot;,
+                &quot;image&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/tijs-van-erp/portait.jpeg&quot;,
+                &quot;SEO&quot;: {
+                    &quot;name&quot;: &quot;Tijs van Erp&quot;,
+                    &quot;role&quot;: &quot;Solution Architect in the Data Domain&quot;,
+                    &quot;organisation&quot;: &quot;Essent&quot;,
+                    &quot;image&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/tijs-van-erp/portait.jpeg&quot;
+                },
+                &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-sample-content\\Essent\\tijs-van-erp&quot;,
+                &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/tijs-van-erp/&quot;,
+                &quot;html&quot;: &quot;&lt;h1&gt;Tijs van Erp&lt;/h1&gt;\n&lt;p&gt;&lt;img src=\&quot;./portait.jpeg\&quot; alt=\&quot;tijs\&quot;&gt;&lt;/p&gt;\n&lt;p&gt;May I have your attention please?\nMay I have your attention please?\nWill the real Slim Shady please stand up?\nI repeat, will the real Slim Shady please stand up?\nWe&#x27;re gonna have a problem here&lt;/p&gt;\n&lt;p&gt;Y&#x27;all act like you never seen a white person before\nJaws all on the floor like Pam and Tommy just burst in the door\nAnd started whooping her ass worse than before\nThey first were divorced, throwing her over furniture (Ah!)\nIt&#x27;s the return of the... &amp;quot;Ah, wait, no way, you&#x27;re kidding\nHe didn&#x27;t just say what I think he did, did he?&amp;quot;\nAnd Dr. Dre said... nothing, you idiots!\nDr. Dre&#x27;s dead, he&#x27;s locked in my basement! (Ha-ha!)\nFeminist women love Eminem\n[&lt;em&gt;Vocal turntable: chigga chigga chigga&lt;/em&gt;]\n&amp;quot;Slim Shady, I&#x27;m sick of him\nLook at him, walking around grabbing his you-know-what\nFlipping the you-know-who.&amp;quot; &amp;quot;Yeah, but he&#x27;s so cute though!&amp;quot;\nYeah, I probably got a couple of screws up in my head loose\nBut no worse, than what&#x27;s going on in your parents&#x27; bedrooms\nSometimes, I wanna get on TV and just let loose, but can&#x27;t\nBut it&#x27;s cool for Tom Green to hump a dead moose\n&amp;quot;My bum is on your lips, my bum is on your lips&amp;quot;\nAnd if I&#x27;m lucky, you might just give it a little kiss\nAnd that&#x27;s the message that we deliver to little kids\nAnd expect them not to know what a woman&#x27;s clitoris is\nOf course they gonna know what intercourse is\nBy the time they hit fourth grade\nThey got the Discovery Channel, don&#x27;t they?\n&amp;quot;We ain&#x27;t nothing but mammals..&amp;quot; Well, some of us cannibals\nWho cut other people open like cantaloupes [&lt;em&gt;slurp&lt;/em&gt;]\nBut if we can hump dead animals and antelopes\nThen there&#x27;s no reason that a man and another man can&#x27;t elope\n[&lt;em&gt;ewww!&lt;/em&gt;] But if you feel like I feel, I got the antidote\nWomen wave your pantyhose, sing the chorus and it goes&lt;/p&gt;\n&lt;p&gt;&#x27;Cause I&#x27;m Slim Shady, yes I&#x27;m the real Shady\nAll you other Slim Shadys are just imitating\nSo won&#x27;t the real Slim Shady please stand up\nPlease stand up, please stand up?&lt;/p&gt;\n&lt;p&gt;&#x27;Cause I&#x27;m Slim Shady, yes I&#x27;m the real Shady\nAll you other Slim Shadys are just imitating\nSo won&#x27;t the real Slim Shady please stand up\nPlease stand up, please stand up?&lt;/p&gt;\n&lt;p&gt;Will Smith don&#x27;t gotta cuss in his raps to sell records\nWell I do, so fuck him and fuck you too!\nYou think I give a damn about a Grammy?\nHalf of you critics can&#x27;t even stomach me, let alone stand me\n&amp;quot;But Slim, what if you win, wouldn&#x27;t it be weird?&amp;quot;\nWhy? So you guys could just lie to get me here?\nSo you can, sit me here next to Britney Spears?\nYo Shit, Christina Aguilera better switch me chairs\nSo I can sit next to Carson Daly and Fred Durst\nAnd hear &#x27;em argue over who she gave head to first\nLittle bitch, put me on blast on MTV\n&amp;quot;Yeah, he&#x27;s cute, but I think he&#x27;s married to Kim, hee-hee!&amp;quot;\nI should download her audio on MP3\nAnd show the whole world how you gave Eminem VD\nI&#x27;m sick of you little girl and boy groups, all you do is annoy me\nSo I have been sent here to destroy you\nAnd there&#x27;s a million of us just like me\nWho cuss like me; who just don&#x27;t give a fuck like me\nWho dress like me; walk, talk and act like me\nIt just might be the next best thing but not quite me!&lt;/p&gt;\n&lt;p&gt;&#x27;Cause I&#x27;m Slim Shady, yes I&#x27;m the real Shady\nAll you other Slim Shadys are just imitating\nSo won&#x27;t the real Slim Shady please stand up\nPlease stand up, please stand up?&lt;/p&gt;\n&lt;p&gt;&#x27;Cause I&#x27;m Slim Shady, yes I&#x27;m the real Shady\nAll you other Slim Shadys are just imitating\nSo won&#x27;t the real Slim Shady please stand up\nPlease stand up, please stand up?&lt;/p&gt;\n&lt;p&gt;I&#x27;m like a head trip to listen to, cause I&#x27;m only giving you\nThings you joke about with your friends inside your living room\nThe only difference is I got the balls to say it\nIn front of y&#x27;all and I don&#x27;t gotta be false or sugarcoated at all\nI just get on the mic and spit it\nAnd whether you like to admit it [&lt;em&gt;err&lt;/em&gt;] I just shit it\nBetter than ninety percent of you rappers out can\nThen you wonder how can kids eat up these albums like Valiums\nIt&#x27;s funny; &#x27;cause at the rate I&#x27;m going when I&#x27;m thirty\nI&#x27;ll be the only person in the nursing home flirting\nPinching nurses asses when I&#x27;m jacking off with Jergens\nAnd I&#x27;m jerking but this whole bag of Viagra isn&#x27;t working\nAnd every single person is a Slim Shady lurking\nHe could be working at Burger King, spitting on your onion rings\n[&lt;em&gt;hach&lt;/em&gt;] Or in the parking lot, circling\nScreaming &amp;quot;I don&#x27;t give a fuck!&amp;quot;\nWith his windows down and his system up\nSo, will the real Shady please stand up?\nAnd put one of those fingers on each hand up?\nAnd be proud to be outta your mind and outta control\nAnd one more time, loud as you can, how does it go?&lt;/p&gt;\n&lt;p&gt;&#x27;Cause I&#x27;m Slim Shady, yes I&#x27;m the real Shady\nAll you other Slim Shadys are just imitating\nSo won&#x27;t the real Slim Shady please stand up\nPlease stand up, please stand up?&lt;/p&gt;\n&lt;p&gt;&#x27;Cause I&#x27;m Slim Shady, yes I&#x27;m the real Shady\nAll you other Slim Shadys are just imitating\nSo won&#x27;t the real Slim Shady please stand up\nPlease stand up, please stand up?&lt;/p&gt;\n&lt;p&gt;&#x27;Cause I&#x27;m Slim Shady, yes I&#x27;m the real Shady\nAll you other Slim Shadys are just imitating\nSo won&#x27;t the real Slim Shady please stand up\nPlease stand up, please stand up?&lt;/p&gt;\n&lt;p&gt;&#x27;Cause I&#x27;m Slim Shady, yes I&#x27;m the real Shady\nAll you other Slim Shadys are just imitating\nSo won&#x27;t the real Slim Shady please stand up\nPlease stand up, please stand up?&lt;/p&gt;\n&lt;p&gt;Ha ha\nGuess there&#x27;s a Slim Shady in all of us\nFuck it, let&#x27;s all stand up&lt;/p&gt;\n&quot;,
+                &quot;blogs&quot;: [
+                    {
+                        &quot;id&quot;: &quot;hello-world&quot;,
+                        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-sample-content\\Essent\\tijs-van-erp\\hello-world&quot;,
+                        &quot;title&quot;: &quot;Hello, World, from Tijs!&quot;,
+                        &quot;description&quot;: &quot;Hello to the world&quot;,
+                        &quot;date&quot;: &quot;Sat Mar 12 2022&quot;,
+                        &quot;tags&quot;: [
+                            &quot;craftsmanship&quot;
+                        ],
+                        &quot;author&quot;: &quot;Tijs van Erp&quot;,
+                        &quot;date_real&quot;: &quot;2022-03-11T23:00:00.000Z&quot;,
+                        &quot;SEO&quot;: {
+                            &quot;title&quot;: &quot;Hello, World, from Tijs!&quot;,
+                            &quot;description&quot;: &quot;Hello to the world&quot;,
+                            &quot;date&quot;: &quot;Sat Mar 12 2022&quot;,
+                            &quot;tags&quot;: [
+                                &quot;craftsmanship&quot;
+                            ],
+                            &quot;author&quot;: &quot;Tijs van Erp&quot;,
+                            &quot;date_real&quot;: &quot;2022-03-11T23:00:00.000Z&quot;
+                        },
+                        &quot;author_id&quot;: &quot;tijs-van-erp&quot;,
+                        &quot;author_role&quot;: &quot;Solution Architect in the Data Domain&quot;,
+                        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/tijs-van-erp/hello-world/&quot;,
+                        &quot;html&quot;: &quot;&lt;h1&gt;Hello World&lt;/h1&gt;\n&lt;p&gt;This is the hello, to the world.&lt;/p&gt;\n&lt;p&gt;This is changed&lt;/p&gt;\n&lt;p&gt;&lt;img src=\&quot;./bizon.jpg\&quot; alt=\&quot;bizon\&quot;&gt;&lt;/p&gt;\n&quot;
+                    },
+                    {
+                        &quot;id&quot;: &quot;how-to-write-code&quot;,
+                        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-sample-content\\Essent\\tijs-van-erp\\how-to-write-code&quot;,
+                        &quot;title&quot;: &quot;How to write code!&quot;,
+                        &quot;description&quot;: &quot;This is how you can write code.&quot;,
+                        &quot;image&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/tijs-van-erp/how-to-write-code/download.gif&quot;,
+                        &quot;tags&quot;: [
+                            &quot;craftsmanship&quot;
+                        ],
+                        &quot;author&quot;: &quot;Tijs van Erp&quot;,
+                        &quot;date_real&quot;: &quot;2022-04-08T12:02:22.025Z&quot;,
+                        &quot;date&quot;: &quot;Fri Apr 08 2022&quot;,
+                        &quot;SEO&quot;: {
+                            &quot;title&quot;: &quot;How to write code!&quot;,
+                            &quot;description&quot;: &quot;This is how you can write code.&quot;,
+                            &quot;image&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/tijs-van-erp/how-to-write-code/download.gif&quot;,
+                            &quot;tags&quot;: [
+                                &quot;craftsmanship&quot;
+                            ],
+                            &quot;author&quot;: &quot;Tijs van Erp&quot;,
+                            &quot;date_real&quot;: &quot;2022-04-08T12:02:22.025Z&quot;,
+                            &quot;date&quot;: &quot;Fri Apr 08 2022&quot;
+                        },
+                        &quot;author_id&quot;: &quot;tijs-van-erp&quot;,
+                        &quot;author_role&quot;: &quot;Solution Architect in the Data Domain&quot;,
+                        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/tijs-van-erp/how-to-write-code/&quot;,
+                        &quot;html&quot;: &quot;&lt;h1&gt;How to write code&lt;/h1&gt;\n&lt;p&gt;The sky calls to us Sea of Tranquility rogue inconspicuous motes of rock and gas citizens of distant epochs take root and flourish. Encyclopaedia galactica a still more glorious dawn awaits corpus callosum rich in mystery rings of Uranus a very small stage in a vast cosmic arena. Corpus callosum two ghostly white figures in coveralls and helmets are softly dancing from which we spring hundreds of thousands star stuff harvesting star light vanquish the impossible.&lt;/p&gt;\n&lt;p&gt;&lt;img src=\&quot;./download.gif\&quot; alt=\&quot;nebula\&quot;&gt;&lt;/p&gt;\n&lt;p&gt;Circumnavigated cosmos brain is the seed of intelligence the only home we&#x27;ve ever known inconspicuous motes of rock and gas rich in mystery. Descended from astronomers permanence of the stars hundreds of thousands take root and flourish a mote of dust suspended in a sunbeam vastness is bearable only through love. The ash of stellar alchemy a mote of dust suspended in a sunbeam rings of Uranus extraordinary claims require extraordinary evidence Sea of Tranquility bits of moving fluff.&lt;/p&gt;\n&lt;p&gt;Courage of our questions science rich in heavy atoms vanquish the impossible the ash of stellar alchemy Apollonius of Perga. Hundreds of thousands are creatures of the cosmos preserve and cherish that pale blue dot emerged into consciousness rings of Uranus inconspicuous motes of rock and gas? The only home we&#x27;ve ever known the carbon in our apple pies brain is the seed of intelligence the carbon in our apple pies concept of the number one dream of the mind&#x27;s eye?&lt;/p&gt;\n&lt;p&gt;Worldlets Flatland shores of the cosmic ocean network of wormholes rings of Uranus rich in mystery. Concept of the number one tingling of the spine preserve and cherish that pale blue dot made in the interiors of collapsing stars Tunguska event encyclopaedia galactica. From which we spring rich in heavy atoms dream of the mind&#x27;s eye not a sunrise but a galaxyrise Sea of Tranquility muse about. Sea of Tranquility two ghostly white figures in coveralls and helmets are softly dancing Sea of Tranquility extraordinary claims require extraordinary evidence invent the universe vastness is bearable only through love?&lt;/p&gt;\n&lt;p&gt;Stirred by starlight courage of our questions quasar a billion trillion hearts of the stars ship of the imagination. Hundreds of thousands permanence of the stars kindling the energy hidden in matter another world vanquish the impossible venture. Bits of moving fluff intelligent beings concept of the number one bits of moving fluff venture Rig Veda? Are creatures of the cosmos vastness is bearable only through love bits of moving fluff finite but unbounded the carbon in our apple pies Sea of Tranquility?&lt;/p&gt;\n&lt;p&gt;A billion trillion ship of the imagination inconspicuous motes of rock and gas dispassionate extraterrestrial observer laws of physics hundreds of thousands. Brain is the seed of intelligence globular star cluster made in the interiors of collapsing stars radio telescope vastness is bearable only through love concept of the number one. Rich in mystery citizens of distant epochs the sky calls to us citizens of distant epochs concept of the number one dream of the mind&#x27;s eye and billions upon billions upon billions upon billions upon billions upon billions upon billions.&lt;/p&gt;\n&quot;
+                    }
+                ]
+            }
+        ],
+        &quot;description&quot;: &quot;The nr one energy company&quot;,
+        &quot;logo&quot;: &quot;./logo-essent.png&quot;,
+        &quot;html&quot;: &quot;&lt;h1&gt;Essent&lt;/h1&gt;\n&lt;p&gt;&lt;img src=\&quot;./logo-essent.png\&quot; alt=\&quot;logo\&quot;&gt;&lt;/p&gt;\n&lt;p&gt;Essent is Netherland&#x27;s number one enegry supplier.&lt;/p&gt;\n&quot;
+    }
+]</code></pre>
+                <p>You can also get all of the blogs from the global state:</p><pre><code>import globalState from &#x27;./globalState.js&#x27; var blogs = globalState.getState(&#x27;all_blogs&#x27;);</code></pre><pre><code>[
+    {
+        &quot;id&quot;: &quot;being-a-developer-is-not-stressfull&quot;,
+        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-sample-content\\Essent\\jasper-boeijenga\\being-a-developer-is-not-stressfull&quot;,
+        &quot;title&quot;: &quot;Being a developer is not stressfull&quot;,
+        &quot;tags&quot;: [
+            &quot;craftsmanship&quot;
+        ],
+        &quot;image&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/jasper-boeijenga/being-a-developer-is-not-stressfull/image.png&quot;,
+        &quot;author&quot;: &quot;Jasper Boeijenga&quot;,
+        &quot;date_real&quot;: &quot;2022-04-08T12:02:22.032Z&quot;,
+        &quot;date&quot;: &quot;Fri Apr 08 2022&quot;,
+        &quot;author_id&quot;: &quot;jasper-boeijenga&quot;,
+        &quot;author_role&quot;: &quot;Technical Competence Lead - Front End&quot;,
+        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/jasper-boeijenga/being-a-developer-is-not-stressfull/&quot;,
+        &quot;author_name&quot;: &quot;Jasper Boeijenga&quot;,
+        &quot;link&quot;: &quot;/essent/jasper-boeijenga/being-a-developer-is-not-stressfull&quot;,
+        &quot;org_id&quot;: &quot;essent&quot;,
+        &quot;org_name&quot;: &quot;Essent&quot;
+    },
+    {
+        &quot;id&quot;: &quot;how-to-write-code&quot;,
+        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-sample-content\\Essent\\tijs-van-erp\\how-to-write-code&quot;,
+        &quot;title&quot;: &quot;How to write code!&quot;,
+        &quot;description&quot;: &quot;This is how you can write code.&quot;,
+        &quot;image&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/tijs-van-erp/how-to-write-code/download.gif&quot;,
+        &quot;tags&quot;: [
+            &quot;craftsmanship&quot;
+        ],
+        &quot;author&quot;: &quot;Tijs van Erp&quot;,
+        &quot;date_real&quot;: &quot;2022-04-08T12:02:22.025Z&quot;,
+        &quot;date&quot;: &quot;Fri Apr 08 2022&quot;,
+        &quot;author_id&quot;: &quot;tijs-van-erp&quot;,
+        &quot;author_role&quot;: &quot;Solution Architect in the Data Domain&quot;,
+        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/tijs-van-erp/how-to-write-code/&quot;,
+        &quot;author_name&quot;: &quot;Tijs van Erp&quot;,
+        &quot;link&quot;: &quot;/essent/tijs-van-erp/how-to-write-code&quot;,
+        &quot;org_id&quot;: &quot;essent&quot;,
+        &quot;org_name&quot;: &quot;Essent&quot;
+    },
+    {
+        &quot;id&quot;: &quot;something-02&quot;,
+        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-content\\Essent\\carlos-kelkboom\\something-02&quot;,
+        &quot;title&quot;: &quot;Something 02&quot;,
+        &quot;description&quot;: &quot;This is something important\nAnd this is a second parsagraph of the description&quot;,
+        &quot;date&quot;: &quot;Mon Apr 04 2022&quot;,
+        &quot;tags&quot;: [],
+        &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+        &quot;date_real&quot;: &quot;2022-04-03T22:00:00.000Z&quot;,
+        &quot;author_id&quot;: &quot;carlos-kelkboom&quot;,
+        &quot;author_role&quot;: &quot;Technical Fellow&quot;,
+        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/something-02/&quot;,
+        &quot;author_name&quot;: &quot;Carlos Kelkboom&quot;,
+        &quot;link&quot;: &quot;/essent/carlos-kelkboom/something-02&quot;,
+        &quot;org_id&quot;: &quot;essent&quot;,
+        &quot;org_name&quot;: &quot;Essent&quot;
+    },
+    {
+        &quot;id&quot;: &quot;something-03&quot;,
+        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-content\\Essent\\carlos-kelkboom\\something-03&quot;,
+        &quot;title&quot;: &quot;Something 03&quot;,
+        &quot;description&quot;: &quot;This is something important\nAnd this is a second parsagraph of the description&quot;,
+        &quot;date&quot;: &quot;Mon Apr 04 2022&quot;,
+        &quot;tags&quot;: [],
+        &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+        &quot;date_real&quot;: &quot;2022-04-03T22:00:00.000Z&quot;,
+        &quot;author_id&quot;: &quot;carlos-kelkboom&quot;,
+        &quot;author_role&quot;: &quot;Technical Fellow&quot;,
+        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/something-03/&quot;,
+        &quot;author_name&quot;: &quot;Carlos Kelkboom&quot;,
+        &quot;link&quot;: &quot;/essent/carlos-kelkboom/something-03&quot;,
+        &quot;org_id&quot;: &quot;essent&quot;,
+        &quot;org_name&quot;: &quot;Essent&quot;
+    },
+    {
+        &quot;id&quot;: &quot;something-04&quot;,
+        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-content\\Essent\\carlos-kelkboom\\something-04&quot;,
+        &quot;title&quot;: &quot;Something 04&quot;,
+        &quot;description&quot;: &quot;This is something important\nAnd this is a second parsagraph of the description&quot;,
+        &quot;date&quot;: &quot;Mon Apr 04 2022&quot;,
+        &quot;tags&quot;: [],
+        &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+        &quot;date_real&quot;: &quot;2022-04-03T22:00:00.000Z&quot;,
+        &quot;author_id&quot;: &quot;carlos-kelkboom&quot;,
+        &quot;author_role&quot;: &quot;Technical Fellow&quot;,
+        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/something-04/&quot;,
+        &quot;author_name&quot;: &quot;Carlos Kelkboom&quot;,
+        &quot;link&quot;: &quot;/essent/carlos-kelkboom/something-04&quot;,
+        &quot;org_id&quot;: &quot;essent&quot;,
+        &quot;org_name&quot;: &quot;Essent&quot;
+    },
+    {
+        &quot;id&quot;: &quot;someting-01&quot;,
+        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-content\\Essent\\carlos-kelkboom\\someting-01&quot;,
+        &quot;title&quot;: &quot;Something 01&quot;,
+        &quot;description&quot;: &quot;This is something important\nAnd this is a second parsagraph of the description&quot;,
+        &quot;date&quot;: &quot;Mon Apr 04 2022&quot;,
+        &quot;tags&quot;: [],
+        &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+        &quot;date_real&quot;: &quot;2022-04-03T22:00:00.000Z&quot;,
+        &quot;author_id&quot;: &quot;carlos-kelkboom&quot;,
+        &quot;author_role&quot;: &quot;Technical Fellow&quot;,
+        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/someting-01/&quot;,
+        &quot;author_name&quot;: &quot;Carlos Kelkboom&quot;,
+        &quot;link&quot;: &quot;/essent/carlos-kelkboom/someting-01&quot;,
+        &quot;org_id&quot;: &quot;essent&quot;,
+        &quot;org_name&quot;: &quot;Essent&quot;
+    },
+    {
+        &quot;id&quot;: &quot;big-bad-wolf&quot;,
+        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-content\\Essent\\carlos-kelkboom\\big-bad-wolf&quot;,
+        &quot;title&quot;: &quot;Who&#x27;s afraid of the big bad wolf&quot;,
+        &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+        &quot;description&quot;: &quot;The life of the big bad wolf&quot;,
+        &quot;date&quot;: &quot;Sun Mar 27 2022&quot;,
+        &quot;tags&quot;: [
+            &quot;wolfs&quot;
+        ],
+        &quot;image&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/big-bad-wolf/wolf.jpg&quot;,
+        &quot;date_real&quot;: &quot;2022-03-26T23:00:00.000Z&quot;,
+        &quot;author_id&quot;: &quot;carlos-kelkboom&quot;,
+        &quot;author_role&quot;: &quot;Technical Fellow&quot;,
+        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/big-bad-wolf/&quot;,
+        &quot;author_name&quot;: &quot;Carlos Kelkboom&quot;,
+        &quot;link&quot;: &quot;/essent/carlos-kelkboom/big-bad-wolf&quot;,
+        &quot;org_id&quot;: &quot;essent&quot;,
+        &quot;org_name&quot;: &quot;Essent&quot;
+    },
+    {
+        &quot;id&quot;: &quot;hello-world&quot;,
+        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-content\\Essent\\carlos-kelkboom\\hello-world&quot;,
+        &quot;title&quot;: &quot;Hello, World!&quot;,
+        &quot;description&quot;: &quot;Hello to the world&quot;,
+        &quot;date&quot;: &quot;Sat Mar 12 2022&quot;,
+        &quot;tags&quot;: [],
+        &quot;author&quot;: &quot;Carlos Kelkboom&quot;,
+        &quot;date_real&quot;: &quot;2022-03-11T23:00:00.000Z&quot;,
+        &quot;author_id&quot;: &quot;carlos-kelkboom&quot;,
+        &quot;author_role&quot;: &quot;Technical Fellow&quot;,
+        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/carlos-kelkboom/hello-world/&quot;,
+        &quot;author_name&quot;: &quot;Carlos Kelkboom&quot;,
+        &quot;link&quot;: &quot;/essent/carlos-kelkboom/hello-world&quot;,
+        &quot;org_id&quot;: &quot;essent&quot;,
+        &quot;org_name&quot;: &quot;Essent&quot;
+    },
+    {
+        &quot;id&quot;: &quot;hello-world&quot;,
+        &quot;path&quot;: &quot;D:\\Projects\\swarm\\content\\Baudin999\\swarm-sample-content\\Essent\\tijs-van-erp\\hello-world&quot;,
+        &quot;title&quot;: &quot;Hello, World, from Tijs!&quot;,
+        &quot;description&quot;: &quot;Hello to the world&quot;,
+        &quot;date&quot;: &quot;Sat Mar 12 2022&quot;,
+        &quot;tags&quot;: [
+            &quot;craftsmanship&quot;
+        ],
+        &quot;author&quot;: &quot;Tijs van Erp&quot;,
+        &quot;date_real&quot;: &quot;2022-03-11T23:00:00.000Z&quot;,
+        &quot;author_id&quot;: &quot;tijs-van-erp&quot;,
+        &quot;author_role&quot;: &quot;Solution Architect in the Data Domain&quot;,
+        &quot;url&quot;: &quot;https://baudin999.github.io/swarm-publish/essent/tijs-van-erp/hello-world/&quot;,
+        &quot;author_name&quot;: &quot;Tijs van Erp&quot;,
+        &quot;link&quot;: &quot;/essent/tijs-van-erp/hello-world&quot;,
+        &quot;org_id&quot;: &quot;essent&quot;,
+        &quot;org_name&quot;: &quot;Essent&quot;
+    }
+]</code></pre>
+            </div>
+        </div>
+    </body>
+
+</html>
